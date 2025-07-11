@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class= "logo">Somto Ezenagu</div>
+        <div>
+            <ul class= "nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class= "logo">Somto Ezenagu</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile.png" alt="Somto Ezenagu profile picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Somto</h1>
+            <p class="section__text__p2">Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Ezenagu-Resume1.pdf')">Download Resume
+
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info
+                    
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/Linkedin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/somtoezenagu/'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/Somto904'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/aboutMe2.jpg" alt="profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Sophomore CS Student <br> Focused on Software Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>BSc Computer Science <br>Canisius University (Expected 2028)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm Somto, a Computer Science major with a strong interest in software development. I enjoy creating practical solutions that make everyday tasks easier. I bring teamwork and resilience to both my projects and the people I work with. Currently, I work as an IT Support Specialist and a Campus Tour Guide, where I support a wide range of technical and non-technical needs while meeting new people.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/Arrow-down.jpg" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <div class="experience-item" data-aos="fade-up" data-aos-duration="800">
+                        <h3>IT Support Specialist - Canisius University</h3>
+                        <p><em>Information Technology Services, Buffalo, NY · Jan 2025 - Present</em></p>
+                        <ul>
+                            <li>Provided technical support and assistance to at least 30 users with software and hardware issues.</li>
+                            <li>Managed 25+ user accounts by setting up access, passwords, and basic security settings to keep the system safe.</li>
+                            <li>Configured system security settings to reduce unauthorized access and improve overall data safety.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <h3>Orientation Leader & Campus Tour Guide - Canisius University</h3>
+                        <p><em>Buffalo, NY · Feb 2023 - Present</em></p>
+                        <ul>
+                            <li>Led campus tours and onboarding sessions for over 100 incoming students and families.</li>
+                            <li>Supported event coordination and collaborated with staff to improve orientation experience for new students.</li>
+                            <li>Helped students and families understand campus life, support services, and academic offerings during tours and orientation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/Arrow-down.jpg" alt="Arrow icon" class="icon arrow" onclick="location.href='#Projects'"/>
+    </section>
+    <section id="Projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container single-project">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-img.png" alt="project1" class="project-image"/>
+                </div>
+                <h2 class="expereinece-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/Arrow-down.jpg" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email-icon.png" alt="Email Icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/Linkedin.png" alt="Linkedin Icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/somtoezenagu/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class= "nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Somtoo Ezenagu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            easing: 'ease-out-cubic',
+            duration: 800,
+        });
+    </script>
+
+</body>
+</html>
