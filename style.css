@@ -447,6 +447,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .article-container {
@@ -455,13 +457,15 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .project-image {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .project-title {
